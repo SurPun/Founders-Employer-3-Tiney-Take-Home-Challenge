@@ -69,7 +69,7 @@
     }
   });
 
-  // Sign in/out Button #1 
+  // Sign in/out Button #1 -----------------
 
   const btnout = document.querySelector(".sign-out")
   const stasI = document.querySelector(".mdateI");
@@ -80,10 +80,9 @@
   let clicked1 = "false";
   function signOut () {
     if (clicked1) {
-      signToggle(this, 'sign-in', 'sign-out');
-      clicked1 = false;
+      modal.style.visibility = 'visible';
     } else {
-      signToggle1(this, 'sign-out', 'sign-in');
+      signToggle1(this, 'sign-in');
       clicked1 = true;
     }
   }
@@ -114,13 +113,13 @@
   let clicked = "false";
   function signIn() {
     if (clicked) {
-      classToggle(this, 'sign-out', 'sign-in');
+      classToggle(this,'sign-out', 'sign-in');
       clicked = false;
     } else {
-      classToggle1(this, 'sign-in', 'sign-out');
-      clicked = true;
+      modal2.style.visibility = 'visible';
     }
   }
+
 
   const classToggle = (el, ...args) => args.map(e => {
      el.classList.toggle(e)
@@ -138,4 +137,42 @@
    }
  )
 
- 
+//  Modal
+
+const modal = document.querySelector(".content");
+const btnClose = document.querySelector(".close-btn")
+const btnConfirm = document.querySelector(".confirm-btn");
+
+
+btnConfirm.addEventListener("click", closeModal);
+btnClose.addEventListener("click", closeModal2);
+
+function closeModal2() {
+  modal.style.visibility = 'hidden';
+}
+
+function closeModal() {
+  signToggle(btnout,'sign-in');
+  clicked1 = false;
+  modal.style.visibility = 'hidden';
+}
+
+//  Modal 2
+
+const modal2 = document.querySelector(".contentt");
+const btnClose2 = document.querySelector(".close-btn2")
+const btnConfirm2 = document.querySelector(".confirm-btn2");
+
+
+btnConfirm2.addEventListener("click", closeModall);
+btnClose2.addEventListener("click", closeModall2);
+
+function closeModall2() {
+  modal2.style.visibility = 'hidden';
+}
+
+function closeModall() {
+  classToggle1(btnin,'sign-in', 'sign-out');
+  clicked = "false";
+  modal2.style.visibility = 'hidden';
+}

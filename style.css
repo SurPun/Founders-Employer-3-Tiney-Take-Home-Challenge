@@ -196,3 +196,136 @@ h2 {
   border-radius: 20px;
 }
 
+/*  */
+
+.content {
+  display: flex;
+  white-space: nowrap;
+  position:absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+
+.content1 {
+  max-width: 100%;
+  height: 100px;
+  background: white;
+  border-radius: 3px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.4);
+}
+
+.head {
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 3.5rem;
+  background: #00bfff;
+  overflow: hidden;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,.2);
+}
+
+.close-btn {
+  position: absolute;
+  bottom: 12px;
+  right: 25px;
+  border: 1px solid #27ae60;
+  border-radius: 3px;
+  color: #27ae60;
+  padding: 8px 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background: #e36666;
+  color: white;
+  transition: .5s;
+}
+
+.confirm-btn {
+  position: absolute;
+  bottom: 12px;
+  left: 10px;
+  border: 1px solid #27ae60;
+  border-radius: 3px;
+  color: #27ae60;
+  padding: 8px 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  background: #27ae60;
+  color: white;
+  transition: .5s;
+}
+
+/*  */
+
+.contentt {
+  display: flex;
+  white-space: nowrap;
+  position:absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+
+.content2 {
+  max-width: 100%;
+  height: 100px;
+  background: white;
+  border-radius: 3px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.4);
+}
+
+.head2 {
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 3.5rem;
+  background: #00bfff;
+  overflow: hidden;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,.2);
+}
+
+.close-btn2 {
+  position: absolute;
+  bottom: 12px;
+  right: 25px;
+  border: 1px solid #27ae60;
+  border-radius: 3px;
+  color: #27ae60;
+  padding: 8px 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.close-btn2:hover {
+  background: #e36666;
+  color: white;
+  transition: .5s;
+}
+
+.confirm-btn2 {
+  position: absolute;
+  bottom: 12px;
+  left: 10px;
+  border: 1px solid #27ae60;
+  border-radius: 3px;
+  color: #27ae60;
+  padding: 8px 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.confirm-btn2:hover {
+  background: #27ae60;
+  color: white;
+  transition: .5s;
+}
